@@ -15,9 +15,14 @@ contract DojoToken is IERC20, IERC20Errors, Context {
     string private _name;
     string private _symbol;
 
-    constructor(string memory name_, string memory symbol_) {
+    constructor(
+        string memory name_,
+        string memory symbol_,
+        uint256 initialSupply_
+    ) {
         _name = name_;
         _symbol = symbol_;
+        _mint(_msgSender(), initialSupply_);
     }
 
     // Name: Função para retornar o nome do token

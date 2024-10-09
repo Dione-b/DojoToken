@@ -8,7 +8,7 @@ contract DojoTokenTest is Test {
     DojoToken public dojoToken;
 
     function setUp() public {
-        dojoToken = new DojoToken("dojoToken", "DOJO");
+        dojoToken = new DojoToken("DojoToken V2", "DOJO", 1000);
     }
 
     function teste_instance_contract() public view {

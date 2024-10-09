@@ -12,7 +12,7 @@ contract CounterScript is Script {
     function run() public {
         vm.startBroadcast();
 
-        dojoToken = new DojoToken("dojoToken", "DOJO");
+        dojoToken = new DojoToken("DojoToken V2", "DOJO", 1000);
 
         vm.stopBroadcast();
     }
